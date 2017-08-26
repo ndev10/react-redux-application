@@ -7,6 +7,7 @@ class PostShow extends Component {
     static contextTypes = {
         router : PropTypes.object
     }
+    // We can use onEnter method using store.dispatch method for reusable componenets.
     componentWillMount() {
         this.props.fetchPost(this.props.params.id);
     }
